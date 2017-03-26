@@ -149,6 +149,7 @@ class OpenCamera: UIViewController ,UINavigationControllerDelegate, UIImagePicke
         if segue.identifier == "toAddComment"{
             if let nextViewController = segue.destination as? AddComment{
                 nextViewController.image1 = myImageView.image
+                nextViewController.status = true;
             }
             
         }

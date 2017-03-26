@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,7 +12,7 @@
         <scene sceneID="9R8-V4-eH0">
             <objects>
                 <navigationController id="lYW-yb-1dy" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k89-VM-IWs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="k89-VM-IWs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -162,12 +163,13 @@
                                 <state key="normal" title="video"/>
                                 <connections>
                                     <action selector="openVideo:" destination="tr3-3O-ZQW" eventType="touchUpInside" id="R1f-bx-ypS"/>
+                                    <segue destination="dTZ-Cd-aUI" kind="show" identifier="toPlayVideo" id="IJw-vr-RQq"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4M5-Wz-kUQ">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2qV-6w-Shl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2qV-6w-Shl">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qV-6w-Shl" id="X1d-aj-mMc">
@@ -236,6 +238,15 @@
                                     <segue destination="h21-FN-x2H" kind="show" identifier="toAddComment" id="0xf-Rg-Ekz"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mT6-Ap-nYZ">
+                                <frame key="frameInset" minX="8" minY="20" height="44" maxX="-8"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Camera View" id="s9g-e6-RP7">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="ZQG-gM-BO9"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -284,6 +295,9 @@
                                     <constraint firstAttribute="width" constant="91" id="n06-P3-lmf"/>
                                 </constraints>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="SubmitComments:" destination="h21-FN-x2H" eventType="touchUpInside" id="Y3o-b7-ZxG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,7 +333,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCell" id="i6S-cn-KoK" customClass="FriendsCell" customModule="QuickSend" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCell" id="i6S-cn-KoK" customClass="FriendsCell" customModule="QuickSend" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="119.5" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6S-cn-KoK" id="HuW-6y-ztX">
@@ -383,5 +397,46 @@
             </objects>
             <point key="canvasLocation" x="589.60000000000002" y="-88.605697151424295"/>
         </scene>
+        <!--Video View-->
+        <scene sceneID="b7C-lh-EDI">
+            <objects>
+                <viewController id="dTZ-Cd-aUI" customClass="OpenVideo" customModule="QuickSend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tzh-ok-rhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="LHg-lQ-gWN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kxg-gT-XRb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video View" id="zhj-AP-iDK">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Proceed" id="bGU-6l-D1m">
+                                <connections>
+                                    <action selector="recordingClick:" destination="dTZ-Cd-aUI" id="bZc-Fc-xkA"/>
+                                    <segue destination="h21-FN-x2H" kind="show" identifier="toAddComment" id="PJb-9z-SSb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Play" id="gl3-kS-BXg">
+                                <connections>
+                                    <action selector="playVideo:" destination="dTZ-Cd-aUI" id="RuK-gB-UNQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Record" id="eAg-8k-63X">
+                                <connections>
+                                    <action selector="proceedClick:" destination="dTZ-Cd-aUI" id="Q2V-63-UwW"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l9E-up-Js6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="720"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0xf-Rg-Ekz"/>
+    </inferredMetricsTieBreakers>
 </document>

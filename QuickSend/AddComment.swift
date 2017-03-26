@@ -15,9 +15,11 @@ import Messages
 
 
 
-class AddComment: UIViewController {
+class AddComment: UIViewController ,MFMailComposeViewControllerDelegate{
 
+    var status :Bool!
     var image1:UIImage!
+    
     
     
     override func viewDidLoad() {
@@ -41,6 +43,16 @@ class AddComment: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    
+    @IBAction func SubmitComments(_ sender: AnyObject) {
+    
+    
+        self.SendEmail(Status : status)
+    }
+    
     
     
     func genPdf() {
@@ -113,4 +125,41 @@ class AddComment: UIViewController {
     }
     
 
+    
+    func SendEmail(Status :Bool) {
+        //Check to see the device can send email.
+        if( MFMailComposeViewController.canSendMail() ) {
+            
+            print("Can send email.")
+            
+            let mailComposer = MFMailComposeViewController()
+            mailComposer.mailComposeDelegate = self
+            
+            //Set the subject and message of the email
+            mailComposer.setSubject("Have you heard a swift?")
+            mailComposer.setMessageBody("This is what they sound like.", isHTML: false)
+            
+        
+            let documentDirectories: AnyObject = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first as AnyObject?)!
+            let filePath = (documentDirectories as! String)  + ("/vid1.mp4")
+            
+           // if let filePath = Bundle.main.path(forResource: "swifts", ofType: "wav") {
+
+            print("File path loaded.")
+                
+                if let fileData = NSData(contentsOfFile: filePath) {
+                    print("File data loaded.")
+                    mailComposer.addAttachmentData(fileData as Data, mimeType: "audio/mp4", fileName: "vid1")
+                }
+            //}
+            self.present(mailComposer, animated: true, completion: nil)
+        }
+        else{
+            
+            let alert = UIAlertController(title: "Alert", message: "No composer Exist", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+            present(alert, animated: true, completion: nil)
+            
+        }
+    }
 }
