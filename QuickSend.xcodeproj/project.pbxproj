@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F010B0C1E7677C400BB9F38 /* AddComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F010B0B1E7677C400BB9F38 /* AddComment.swift */; };
+		0F010B0E1E76857800BB9F38 /* OpenCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F010B0D1E76857800BB9F38 /* OpenCamera.swift */; };
 		0F020DB11E01964500631D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F020DB01E01964500631D72 /* AppDelegate.swift */; };
 		0F020DB31E01964500631D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F020DB21E01964500631D72 /* ViewController.swift */; };
 		0F020DB61E01964500631D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F020DB41E01964500631D72 /* Main.storyboard */; };
@@ -15,6 +17,14 @@
 		0F020DBE1E01964500631D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F020DBC1E01964500631D72 /* LaunchScreen.storyboard */; };
 		0F020DC91E01964500631D72 /* QuickSendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F020DC81E01964500631D72 /* QuickSendTests.swift */; };
 		0F020DD41E01964500631D72 /* QuickSendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F020DD31E01964500631D72 /* QuickSendUITests.swift */; };
+		0F020DE21E02C07200631D72 /* ConstantAndMicro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F020DE11E02C07200631D72 /* ConstantAndMicro.swift */; };
+		0F4865381E754FBA00140EC1 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4865371E754FBA00140EC1 /* AddFriends.swift */; };
+		0F48653A1E75506600140EC1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4865391E75506600140EC1 /* HomeVC.swift */; };
+		0F48653D1E755B0500140EC1 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F48653C1E755B0500140EC1 /* FriendsCell.swift */; };
+		0FFD0D5F1E76F2ED00CC5A61 /* OpenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD0D5E1E76F2ED00CC5A61 /* OpenVideo.swift */; };
+		0FFEA4471E86E5F900705FA4 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFEA4451E86E5F900705FA4 /* Messages.framework */; };
+		0FFEA4481E86E5F900705FA4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFEA4461E86E5F900705FA4 /* MessageUI.framework */; };
+		0FFEA44A1E86E69500705FA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEA4491E86E69500705FA4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F010B0B1E7677C400BB9F38 /* AddComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddComment.swift; sourceTree = "<group>"; };
+		0F010B0D1E76857800BB9F38 /* OpenCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCamera.swift; sourceTree = "<group>"; };
 		0F020DAD1E01964500631D72 /* QuickSend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F020DB01E01964500631D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F020DB21E01964500631D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,14 @@
 		0F020DCF1E01964500631D72 /* QuickSendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F020DD31E01964500631D72 /* QuickSendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSendUITests.swift; sourceTree = "<group>"; };
 		0F020DD51E01964500631D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F020DE11E02C07200631D72 /* ConstantAndMicro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantAndMicro.swift; sourceTree = "<group>"; };
+		0F4865371E754FBA00140EC1 /* AddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriends.swift; sourceTree = "<group>"; };
+		0F4865391E75506600140EC1 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0F48653C1E755B0500140EC1 /* FriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		0FFD0D5E1E76F2ED00CC5A61 /* OpenVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenVideo.swift; sourceTree = "<group>"; };
+		0FFEA4451E86E5F900705FA4 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		0FFEA4461E86E5F900705FA4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0FFEA4491E86E69500705FA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFEA4471E86E5F900705FA4 /* Messages.framework in Frameworks */,
+				0FFEA4481E86E5F900705FA4 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +101,12 @@
 		0F020DA41E01964500631D72 = {
 			isa = PBXGroup;
 			children = (
+				0FFEA4491E86E69500705FA4 /* Constants.swift */,
 				0F020DAF1E01964500631D72 /* QuickSend */,
 				0F020DC71E01964500631D72 /* QuickSendTests */,
 				0F020DD21E01964500631D72 /* QuickSendUITests */,
 				0F020DAE1E01964500631D72 /* Products */,
+				0FFEA4441E86E5F900705FA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,8 @@
 		0F020DAF1E01964500631D72 /* QuickSend */ = {
 			isa = PBXGroup;
 			children = (
+				0F48653B1E755AC700140EC1 /* Cell */,
+				0F020DE11E02C07200631D72 /* ConstantAndMicro.swift */,
 				0F020DB01E01964500631D72 /* AppDelegate.swift */,
 				0F020DB21E01964500631D72 /* ViewController.swift */,
 				0F020DB41E01964500631D72 /* Main.storyboard */,
@@ -106,6 +132,11 @@
 				0F020DBC1E01964500631D72 /* LaunchScreen.storyboard */,
 				0F020DBF1E01964500631D72 /* Info.plist */,
 				0F020DB71E01964500631D72 /* QuickSend.xcdatamodeld */,
+				0F4865371E754FBA00140EC1 /* AddFriends.swift */,
+				0F4865391E75506600140EC1 /* HomeVC.swift */,
+				0F010B0B1E7677C400BB9F38 /* AddComment.swift */,
+				0F010B0D1E76857800BB9F38 /* OpenCamera.swift */,
+				0FFD0D5E1E76F2ED00CC5A61 /* OpenVideo.swift */,
 			);
 			path = QuickSend;
 			sourceTree = "<group>";
@@ -126,6 +157,23 @@
 				0F020DD51E01964500631D72 /* Info.plist */,
 			);
 			path = QuickSendUITests;
+			sourceTree = "<group>";
+		};
+		0F48653B1E755AC700140EC1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F48653C1E755B0500140EC1 /* FriendsCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		0FFEA4441E86E5F900705FA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FFEA4451E86E5F900705FA4 /* Messages.framework */,
+				0FFEA4461E86E5F900705FA4 /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +244,7 @@
 				TargetAttributes = {
 					0F020DAC1E01964500631D72 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FS58X3J7RU;
 						ProvisioningStyle = Automatic;
 					};
 					0F020DC31E01964500631D72 = {
@@ -262,9 +311,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F020DE21E02C07200631D72 /* ConstantAndMicro.swift in Sources */,
+				0FFEA44A1E86E69500705FA4 /* Constants.swift in Sources */,
+				0F010B0E1E76857800BB9F38 /* OpenCamera.swift in Sources */,
+				0F4865381E754FBA00140EC1 /* AddFriends.swift in Sources */,
 				0F020DB31E01964500631D72 /* ViewController.swift in Sources */,
+				0F48653A1E75506600140EC1 /* HomeVC.swift in Sources */,
 				0F020DB11E01964500631D72 /* AppDelegate.swift in Sources */,
 				0F020DB91E01964500631D72 /* QuickSend.xcdatamodeld in Sources */,
+				0FFD0D5F1E76F2ED00CC5A61 /* OpenVideo.swift in Sources */,
+				0F48653D1E755B0500140EC1 /* FriendsCell.swift in Sources */,
+				0F010B0C1E7677C400BB9F38 /* AddComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -416,7 +473,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FS58X3J7RU;
 				INFOPLIST_FILE = QuickSend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.QuickSend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +487,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FS58X3J7RU;
 				INFOPLIST_FILE = QuickSend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.QuickSend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +570,7 @@
 				0F020DDA1E01964500631D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F020DDB1E01964500631D72 /* Build configuration list for PBXNativeTarget "QuickSendTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +579,7 @@
 				0F020DDD1E01964500631D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F020DDE1E01964500631D72 /* Build configuration list for PBXNativeTarget "QuickSendUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +588,7 @@
 				0F020DE01E01964500631D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

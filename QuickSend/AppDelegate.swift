@@ -6,6 +6,12 @@
 //  Copyright © 2016 Maahi. All rights reserved.
 //
 
+
+
+//http://stackoverflow.com/questions/39762579/insert-an-image-into-pdf-file-swift
+//https://turbofuture.com/cell-phones/Access-Photo-Camera-and-Library-in-Swift
+
+
 import UIKit
 import CoreData
 
@@ -46,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
+    @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -76,7 +83,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data Saving support
 
     func saveContext () {
+        
         let context = persistentContainer.viewContext
+        
+        /*if #available(iOS 10.0, *) {
+            let context = persistentContainer.viewContext
+        } else {
+            // Fallback on earlier versions
+        }*/
+        
         if context.hasChanges {
             do {
                 try context.save()
